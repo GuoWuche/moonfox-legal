@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion - Moonfox | 账号删除 - 狐问六爻</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #FBE4EC 0%, #E8D5F0 100%);
+            color: #333; line-height: 1.7; min-height: 100vh; padding: 40px 20px;
+        }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 48px 40px; box-shadow: 0 8px 32px rgba(232,155,196,.15); }
+        nav { text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #f0e0e8; }
+        nav a { display: inline-block; padding: 6px 14px; margin: 0 4px; color: #733500; text-decoration: none; font-size: 14px; border-radius: 16px; transition: all .2s; }
+        nav a:hover { background: #FAF0E6; }
+        nav a.active { background: #E2A45C; color: #fff; }
+        header { text-align: center; margin-bottom: 32px; }
+        h1 { font-size: 28px; color: #733500; margin-bottom: 8px; }
+        .subtitle { color: #999; font-size: 14px; }
+        .lang-switch { text-align: center; margin-bottom: 32px; }
+        .lang-switch a { display: inline-block; padding: 6px 16px; margin: 0 4px; color: #4A90E2; text-decoration: none; border: 1px solid #4A90E2; border-radius: 16px; font-size: 13px; transition: all .2s; cursor: pointer; }
+        .lang-switch a:hover { background: #4A90E2; color: #fff; }
+        section { margin-bottom: 36px; display: none; }
+        section.active { display: block; }
+        h2 { font-size: 20px; color: #733500; margin-bottom: 16px; padding-left: 12px; border-left: 4px solid #E2A45C; }
+        h3 { font-size: 16px; color: #333; margin: 24px 0 12px; }
+        p { margin-bottom: 12px; color: #555; }
+        ul, ol { margin: 12px 0 16px 24px; color: #555; }
+        li { margin-bottom: 8px; }
+        .highlight { background: #FFF8E7; border: 1px solid #F2CB76; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+        .highlight strong { color: #B5651D; }
+        .email-box { background: #F0F8FF; border: 1px solid #B0D4F1; border-radius: 8px; padding: 16px 20px; margin: 20px 0; text-align: center; }
+        .email-box a { color: #1a73e8; font-weight: 600; font-size: 16px; text-decoration: none; }
+        .email-box a:hover { text-decoration: underline; }
+        footer { text-align: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid #f0e0e8; color: #999; font-size: 13px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th, td { text-align: left; padding: 10px 12px; border: 1px solid #f0e0e8; }
+        th { background: #FAF0E6; color: #733500; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="privacy.html">🔒 Privacy</a>
+            <a href="terms.html">📜 Terms</a>
+            <a href="delete-account.html" class="active">🗑️ Delete Account</a>
+        </nav>
+
+        <header>
+            <h1>🦊 Moonfox / 狐问六爻</h1>
+            <p class="subtitle">Account &amp; Data Deletion Request | 账号与数据删除申请</p>
+        </header>
+
+        <div class="lang-switch">
+            <a onclick="switchLang('en')">English</a>
+            <a onclick="switchLang('zh')">简体中文</a>
+        </div>
+
+        <section id="lang-en" class="active">
+            <h2>How to Request Account Deletion</h2>
+            <p>This page explains how to request the deletion of your <strong>Moonfox</strong> account and the user data associated with it, in compliance with the Google Play Developer Policy.</p>
+
+            <h3>Step 1 — Send us an Email</h3>
+            <p>Send an email from the same Google account you used to sign in to Moonfox, to the address below:</p>
+            <div class="email-box">
+                <a href="mailto:quantus.studio@gmail.com?subject=Delete%20My%20Moonfox%20Account&amp;body=Please%20delete%20the%20account%20associated%20with%20this%20email%20address.">quantus.studio@gmail.com</a>
+            </div>
+
+            <h3>Step 2 — Include the Following Information</h3>
+            <ul>
+                <li><strong>Subject:</strong> "Delete My Moonfox Account"</li>
+                <li><strong>Body:</strong> A brief sentence stating you wish to delete your account.</li>
+                <li><strong>From address:</strong> Must be the same Google account email used to sign in to the app.</li>
+            </ul>
+
+            <h3>Step 3 — Wait for Confirmation</h3>
+            <p>We will process your request and send you a confirmation email within <strong>30 days</strong>. After confirmation, your account and all associated data will be permanently removed from our servers.</p>
+
+            <h2>Data Handled by This Request</h2>
+            <p>The following data types will be <strong>deleted</strong>:</p>
+            <table>
+                <thead><tr><th>Data Type</th><th>Source</th><th>Action</th></tr></thead>
+                <tbody>
+                    <tr><td>Google Account UID</td><td>Firebase Authentication</td><td>Deleted</td></tr>
+                    <tr><td>Display Name</td><td>Firebase Authentication</td><td>Deleted</td></tr>
+                    <tr><td>Email Address</td><td>Firebase Authentication</td><td>Deleted</td></tr>
+                    <tr><td>Profile Photo URL</td><td>Firebase Authentication</td><td>Deleted</td></tr>
+                </tbody>
+            </table>
+            <p>Data <strong>retained</strong> after deletion: <em>None.</em> We do not retain any user data after an account deletion request is processed.</p>
+
+            <div class="highlight">
+                <strong>📱 Local Data on Your Device:</strong> Your divination history records are stored <strong>only on your device</strong> and are never uploaded to our servers. To delete them, simply uninstall the Moonfox app, or use the in-app "History → Manage → Delete" feature to remove individual records.
+            </div>
+
+            <h2>Alternative: In-App Account Sign Out</h2>
+            <p>If you simply wish to sign out without deleting your account, open the app, go to <strong>Profile → Log out</strong>. This will not delete your account on our servers; you can sign in again at any time.</p>
+
+            <h2>Contact</h2>
+            <p>For any questions about this policy or your data, please contact us at <a href="mailto:quantus.studio@gmail.com">quantus.studio@gmail.com</a>.</p>
+        </section>
+
+        <section id="lang-zh">
+            <h2>如何申请删除账号</h2>
+            <p>本页说明如何申请删除您的 <strong>狐问六爻 (Moonfox)</strong> 账号及与之关联的用户数据，相关流程符合 Google Play 开发者政策要求。</p>
+
+            <h3>第 1 步 — 发送电子邮件</h3>
+            <p>请使用您当初登录狐问六爻所用的 Google 账号邮箱，向以下地址发送邮件：</p>
+            <div class="email-box">
+                <a href="mailto:quantus.studio@gmail.com?subject=%E5%88%A0%E9%99%A4%E6%88%91%E7%9A%84%E7%8B%90%E9%97%AE%E5%85%AD%E7%88%BB%E8%B4%A6%E5%8F%B7&amp;body=%E8%AF%B7%E5%88%A0%E9%99%A4%E4%B8%8E%E6%AD%A4%E9%82%AE%E7%AE%B1%E5%85%B3%E8%81%94%E7%9A%84%E8%B4%A6%E5%8F%B7%E3%80%82">quantus.studio@gmail.com</a>
+            </div>
+
+            <h3>第 2 步 — 邮件内需注明以下信息</h3>
+            <ul>
+                <li><strong>标题：</strong>"删除我的狐问六爻账号"</li>
+                <li><strong>正文：</strong>简短一句话说明您希望删除账号即可。</li>
+                <li><strong>发件邮箱：</strong>必须使用您当初登录 App 所用的 Google 账号邮箱。</li>
+            </ul>
+
+            <h3>第 3 步 — 等待确认回复</h3>
+            <p>我们将在 <strong>30 天内</strong>处理您的申请并回复确认邮件。确认后，您的账号及所有关联数据将被永久从我们的服务器移除。</p>
+
+            <h2>本次申请涉及的数据</h2>
+            <p>以下数据类型将被<strong>删除</strong>：</p>
+            <table>
+                <thead><tr><th>数据类型</th><th>数据来源</th><th>操作</th></tr></thead>
+                <tbody>
+                    <tr><td>Google 账号唯一标识 (UID)</td><td>Firebase Authentication</td><td>删除</td></tr>
+                    <tr><td>显示名称</td><td>Firebase Authentication</td><td>删除</td></tr>
+                    <tr><td>电子邮件地址</td><td>Firebase Authentication</td><td>删除</td></tr>
+                    <tr><td>头像图片 URL</td><td>Firebase Authentication</td><td>删除</td></tr>
+                </tbody>
+            </table>
+            <p>账号删除后<strong>保留</strong>的数据：<em>无。</em>申请处理完成后，我们不保留任何用户数据。</p>
+
+            <div class="highlight">
+                <strong>📱 关于设备本地数据：</strong>您的占卜历史记录<strong>仅保存在您的设备本地</strong>，从未上传到我们的服务器。如需删除，您只需卸载 App 即可清除全部本地数据；或在 App 内使用"历史记录 → 管理 → 删除"功能逐条删除。
+            </div>
+
+            <h2>另一种选择：仅退出登录</h2>
+            <p>如果您只是希望退出登录而不删除账号，可以打开 App，进入<strong>"我的 → 退出登录"</strong>。这不会删除您在服务器上的账号信息，您可以随时再次登录。</p>
+
+            <h2>联系我们</h2>
+            <p>如对本政策或您的数据有任何疑问，请联系我们：<a href="mailto:quantus.studio@gmail.com">quantus.studio@gmail.com</a>。</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Moonfox / 狐问六爻 — Quantus Studio</p>
+            <p>Last updated: March 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('section').forEach(function (s) { s.classList.remove('active'); });
+            document.getElementById('lang-' + lang).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        (function () {
+            var u = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            if (u.indexOf('zh') === 0) switchLang('zh');
+        })();
+    </script>
+</body>
+</html>
